@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "=> Hello from Arghya! Create a new react project"
+echo "=> Hello from Arghya! Create a new node.js project"
 echo -n "=> This dir(.) or different(folder_name) : "
 read folder_name
 echo -n "=> Select (js/ts) : "
