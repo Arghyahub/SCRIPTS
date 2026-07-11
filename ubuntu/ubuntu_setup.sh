@@ -35,10 +35,7 @@ run_task() {
     shift
 
     printf "\n####### %s #######\n\n" "$title"
-    ENV_FILE="$ENV_FILE"
-    ALIAS_FILE="$ALIAS_FILE"
-    NVM_PROFILE="$NVM_PROFILE"
-    FUNC_FILE="$FUNC_FILE"
+    export ENV_FILE ALIAS_FILE NVM_PROFILE FUNC_FILE
     bash -c "$(declare -f append_if_missing); $1"
 
     printf "\n"
